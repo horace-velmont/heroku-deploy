@@ -127,7 +127,7 @@ if (heroku.appdir) {
 
     createProcfile(heroku);
 
-    execSync("heroku login");
+    execSync("heroku login -i");
     if (heroku.usedocker) {
       execSync("heroku container:login");
     }
